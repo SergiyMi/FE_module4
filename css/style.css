@@ -25,27 +25,30 @@ body {
   margin: 0 auto;
 }
 
-.margin {
-  margin-right: 30px;
-  margin-left: 30px;
-}
-
 /* ==========header==========menu========================= */
 .upper {
   padding-top: 24px;
   margin-bottom: 90px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .menu {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+  width: 476px;
+  float: right;
 }
 
 .logo {
-  margin: 0;
-  font-family: "Roboto";
+  margin-left: 15px;
   font-size: 30px;
+  text-transform: uppercase;
+  float: left;
+  text-decoration: none;
+  font-family: "Roboto";
+  color: rgb(81, 81, 81);
 }
 
 .logo::first-letter {
@@ -54,50 +57,47 @@ body {
 
 .menu-item {
   list-style-type: none;
+  font-family: "OpenSans";
   float: left;
   min-height: 37px;
   line-height: 37px;
-}
-
-.menu-item:nth-child(1) {
-  margin-right: 542px;
-}
-
-.menu-item:nth-child(2) {
-  color: rgb(26, 188, 156);
-  margin-right: 34px;
-}
-
-.menu-item:nth-child(3) {
-  margin-right: 38px;
-}
-
-.menu-item:nth-child(4) {
-  margin-right: 30px;
-}
-
-.menu-item:nth-child(5) {
-  margin-right: 28px;
-}
-
-.menu-item:nth-child(6) {
-  margin-right: 34px;
-}
-
-.menu-item:nth-child(n + 2) {
   font-size: 14px;
-  font-family: "OpenSans";
+}
+
+.menu-item a {
+  text-decoration: none;
   font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(81, 81, 81);
+}
+.menu-item:nth-of-type(n) {
+  margin-left: 30px;
+}
+
+.menu-item:first-of-type {
+  margin-left: 0;
+}
+
+.menu-item:hover a {
+  color: rgb(26, 188, 156);
+}
+
+.margin-logo {
+  margin-bottom: 90px;
+  min-height: 37px;
 }
 
 .title {
+  margin: 0;
+}
+
+.title-text {
   font-family: "Roboto";
   font-size: 48px;
   color: rgb(81, 81, 81);
   text-transform: uppercase;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 90px;
+  margin: 0 auto;
 }
 
 .title::after {
@@ -113,26 +113,21 @@ body {
 .card-container {
   margin-bottom: 88px;
   vertical-align: top;
-}
-
-.card-container .card:nth-of-type(n + 1) {
-  margin-right: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .card-container .card:nth-child(-n + 4) {
   margin-bottom: 30px;
 }
 
-.card-container .card:nth-of-type(4n + 1) {
-  margin-left: 30px;
-}
-
 .card {
   vertical-align: top;
   width: 255px;
-  height: 322px;
   background-color: rgb(233, 240, 253);
   float: left;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .card-link {
@@ -172,11 +167,13 @@ body {
 }
 
 .card:hover .card-title {
-  background-color: purple;
+  background-color: rgb(26, 188, 156);
 }
 
 .card:hover .card-price {
-  background-color: orange;
+  background-color: rgb(26, 188, 156);
+  opacity: 0.439;
+  color: rgb(255, 255, 255);
 }
 
 /* ====================footer========================= */
