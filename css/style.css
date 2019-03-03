@@ -33,14 +33,6 @@ body {
   padding-right: 15px;
 }
 
-.menu {
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
-  width: 476px;
-  float: right;
-}
-
 .logo {
   margin-left: 15px;
   font-size: 30px;
@@ -53,6 +45,14 @@ body {
 
 .logo::first-letter {
   color: rgb(26, 188, 156);
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  float: right;
+  margin-bottom: 90px;
 }
 
 .menu-item {
@@ -80,11 +80,6 @@ body {
 
 .menu-item:hover a {
   color: rgb(26, 188, 156);
-}
-
-.margin-logo {
-  margin-bottom: 90px;
-  min-height: 37px;
 }
 
 .title {
@@ -117,12 +112,7 @@ body {
   padding-right: 15px;
 }
 
-.card-container .card:nth-child(-n + 4) {
-  margin-bottom: 30px;
-}
-
 .card {
-  vertical-align: top;
   width: 255px;
   background-color: rgb(233, 240, 253);
   float: left;
@@ -130,9 +120,12 @@ body {
   margin-right: 15px;
 }
 
+.card-container .card:nth-child(-n + 4) {
+  margin-bottom: 30px;
+}
+
 .card-link {
   text-decoration: none;
-  vertical-align: top;
 }
 
 .card-image img {
@@ -177,7 +170,7 @@ body {
 }
 
 /* ====================footer========================= */
-.news {
+.latest-news {
   margin: 0;
   text-transform: uppercase;
   font-family: "Roboto";
@@ -186,7 +179,7 @@ body {
   margin-bottom: 80px;
 }
 
-.news::after {
+.latest-news::after {
   content: "";
   background-color: rgb(78, 198, 171);
   width: 164px;
@@ -195,22 +188,29 @@ body {
   margin: 18px auto;
 }
 
-.latest-news {
+.news {
   margin: 0 30px;
-  vertical-align: top;
 }
 
-.latest-news-item {
+.news-item {
   width: 350px;
   float: left;
 }
 
-.news-image {
-  margin-bottom: 6px;
+.news .news-item:nth-of-type(n + 1) {
+  margin-right: 30px;
 }
 
-.news-image img {
-  width: 350px;
+.news .news-item:last-of-type {
+  margin-right: 0;
+}
+
+.news .news-item:nth-of-type(2) {
+  min-height: 457px;
+}
+
+.news-image {
+  margin-bottom: 6px;
 }
 
 .header-news {
@@ -249,16 +249,4 @@ body {
   font-size: 16px;
   color: rgb(255, 255, 255);
   text-transform: capitalize;
-}
-
-.latest-news .latest-news-item:nth-of-type(n + 1) {
-  margin-right: 30px;
-}
-
-.latest-news .latest-news-item:last-of-type {
-  margin-right: 0;
-}
-
-.latest-news .latest-news-item:nth-of-type(2) {
-  min-height: 457px;
 }
